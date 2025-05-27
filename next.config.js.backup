@@ -112,7 +112,7 @@ const nextConfig = {
   compress: true,
 
   // Increase build output details
-  output: 'export',
+  output: 'standalone',
 
   // Disable powered by header
   poweredByHeader: false,
