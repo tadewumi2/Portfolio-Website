@@ -1,9 +1,10 @@
-import '@/scss/globals.css';
-import '@/scss/index.scss';
+import '../src/scss/globals.css';
+import '../src/scss/index.css';
 import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import { Fira_Code, Raleway } from 'next/font/google';
 import { useEffect, useState } from 'react';
+import OtherProjects from '../src/sections/OtherProjects';
 
 const raleway = Raleway({ subsets: ['latin'] });
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });

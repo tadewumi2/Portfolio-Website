@@ -1,42 +1,42 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { Suspense, useEffect, useState } from 'react';
-import Loader from '../components/Loader';
+import Loader from '../src/components/Loader';
 
 // Components that are needed immediately
-import Hero from '../sections/Hero';
-import Navbar from '../sections/Navbar';
+import Hero from '../src/sections/Hero';
+import Navbar from '../src/sections/Navbar';
 
 // Dynamically import components that can be loaded later
-const Email = dynamic(() => import('../components/Email'), {
+const Email = dynamic(() => import('../src/components/Email'), {
   ssr: false,
 });
 
-const SocialIcons = dynamic(() => import('../components/SocialIcons'), {
+const SocialIcons = dynamic(() => import('../src/components/SocialIcons'), {
   ssr: false,
 });
 
-const About = dynamic(() => import('../sections/About'), {
+const About = dynamic(() => import('../src/sections/About'), {
   loading: () => <div className="section-loader">Loading...</div>,
 });
 
-const Experience = dynamic(() => import('../sections/Experience'), {
+const Experience = dynamic(() => import('../src/sections/Experience'), {
   loading: () => <div className="section-loader">Loading...</div>,
 });
 
-const Projects = dynamic(() => import('../sections/Projects'), {
+const Projects = dynamic(() => import('../src/sections/Projects'), {
   loading: () => <div className="section-loader">Loading...</div>,
 });
 
-const OtherProjects = dynamic(() => import('@/sections/OtherProjects'), {
+const OtherProjects = dynamic(() => import('../src/sections/OtherProjects'), {
   loading: () => <div className="section-loader">Loading...</div>,
 });
 
-const Contact = dynamic(() => import('../sections/Contact'), {
+const Contact = dynamic(() => import('../src/sections/Contact'), {
   loading: () => <div className="section-loader">Loading...</div>,
 });
 
-const Footer = dynamic(() => import('../sections/Footer'), {
+const Footer = dynamic(() => import('../src/sections/Footer'), {
   ssr: false,
 });
 

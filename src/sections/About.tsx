@@ -102,7 +102,7 @@ function About() {
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
-              objectFit="cover"
+              style={{ objectFit: 'cover' }}
               className="rounded-lg"
               aria-label="Profile picture of Lohit Kolluri"
             />

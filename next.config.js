@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-basePath: '/Portfolio',
-assetPrefix: '/Portfolio',
+//basePath: '/Portfolio',
+//assetPrefix: '/Portfolio',
   reactStrictMode: true,
 
   // Optimize images
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -105,7 +106,7 @@ assetPrefix: '/Portfolio',
         ],
       },
     ];
-  },
+  },  
 
   // Enable page caching for better performance
   generateEtags: true,
